@@ -1,9 +1,12 @@
-import React from 'react'
+import EmployeesList from "@/components/EmployeesList";
+import React from "react";
 
 const AllEmployees = () => {
   return (
-    <div>AllEmployees</div>
-  )
-}
+    <div className="m-4"> 
+      <EmployeesList showPagination={true} />
+    </div>
+  );
+};
 
-export default AllEmployees
+export default AllEmployees;

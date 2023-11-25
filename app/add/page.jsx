@@ -24,7 +24,7 @@ const RefuelingDetails = () => {
   const [empName, setEmpName] = useState("");
   const [salary, setSalary] = useState(0);
   const [age, setAge] = useState(0);
-  const [fillingDate, setDate] = useState("");
+  const [imageFile, setImageFile] = useState("");
   const [petrolStation, setPetrolStation] = useState("");
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [modalDetails, setModalDetails] = useState({
@@ -32,7 +32,7 @@ const RefuelingDetails = () => {
     modalMessage: "",
   });
   const [show, toggleShow] = useState(false);
-  
+
   // const { data: session, status } = useSession();
 
   // useEffect(() => {
@@ -112,7 +112,7 @@ const RefuelingDetails = () => {
       <div className="flex justify-center h-screen p-4">
         <form className="md:w-[60%] w-full h-max p-2 pt-2 border border-neutral-200 shadow-md">
           <div className="flex justify-center align-center p-4">
-            <h3>Enter Employee Details</h3>
+            <h3>Add Employee</h3>
           </div>
           <div className="grid gap-6 mb-6 md:grid-cols-2 ">
             <div>
